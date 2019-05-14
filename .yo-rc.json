@@ -1,0 +1,47 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "gitCompany": "",
+    "baseName": "TheBPorg2",
+    "packageName": "io.thebackpageorg.tbp.app",
+    "packageFolder": "io/thebackpageorg/tbp/app",
+    "serverPort": 4000,
+    "serviceDiscoveryType": false,
+    "authenticationType": "jwt",
+    "uaaBaseName": "../uaa",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": "elasticsearch",
+    "enableSwaggerCodegen": false,
+    "messageBroker": false,
+    "buildTool": "maven",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "testFrameworks": [
+      "gatling",
+      "cucumber",
+      "protractor"
+    ],
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": [
+      "fr",
+      "en"
+    ],
+    "clientFramework": "react",
+    "jhiPrefix": "jhi",
+    "jhipsterVersion": "6.0.1",
+    "jwtSecretKey": "ZTJhM2Q5OWY2ZTE2ZGQ2NDMxNDRkNDhiNTZkODE4NDg5OWY0MzI3YTQ4NDdmZjRjMGViNTQ0NzhmNDZmMmZhYmJkZjhiMGZlNjY0YTU1MWIxYmU2MGU5MmU4YThiOGVlOTIzM2E2NGY2NjIwZDhkZjk2NWRjYWJkODllMDBhMTE=",
+    "clientTheme": "none",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": []
+  },
+  "git-provider": "GitHub",
+  "git-company": "tistudios",
+  "repository-name": "tbp-org-2"
+}

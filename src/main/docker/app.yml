@@ -1,0 +1,22 @@
+version: '2'
+services:
+  thebporg2-app:
+    image: thebporg2
+    environment:
+      - _JAVA_OPTIONS=-Xmx512m -Xms256m
+      - SPRING_PROFILES_ACTIVE=prod,swagger
+      - MANAGEMENT_METRICS_EXPORT_PROMETHEUS_ENABLED=true
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://thebporg2-postgresql:5432/TheBPorg2
+      - JHIPSTER_SLEEP=10 # gives time for the database to boot before the application
+      - SPRING_DATA_JEST_URI=http://thebporg2-elasticsearch:9200
+      - SPRING_ELASTICSEARCH_REST_URIS=http://thebporg2-elasticsearch:9200
+    ports:
+      - 4000:4000
+  thebporg2-postgresql:
+    extends:
+      file: postgresql.yml
+      service: thebporg2-postgresql
+  thebporg2-elasticsearch:
+    extends:
+      file: elasticsearch.yml
+      service: thebporg2-elasticsearch
